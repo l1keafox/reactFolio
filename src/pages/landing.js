@@ -23,7 +23,7 @@ export default function Landing() {
           leaveTo="opacity-0"
         >
 
-        <p className= "text-1xl block duration-500 relative text-center">
+        <p className= "text-1xl block duration-750 relative text-center">
             I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
         </p>
         </Transition>
