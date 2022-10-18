@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/reactFolio/static/css/main.512927b1.css",
-    "main.js": "/reactFolio/static/js/main.60945c41.js",
+    "main.css": "/reactFolio/static/css/main.d6098cec.css",
+    "main.js": "/reactFolio/static/js/main.68304951.js",
     "static/js/787.2e31c416.chunk.js": "/reactFolio/static/js/787.2e31c416.chunk.js",
     "static/media/digital-marketing-meeting.jpg": "/reactFolio/static/media/digital-marketing-meeting.c672fcf0b6bd0c33ff16.jpg",
     "static/media/avatar.jpg": "/reactFolio/static/media/avatar.1130aad49a7ca9b25e9f.jpg",
     "static/media/projectOne.PNG": "/reactFolio/static/media/projectOne.bbe97ca89956e8e2062f.PNG",
     "static/media/middle.PNG": "/reactFolio/static/media/middle.e29efde94dc2b66acc86.PNG",
     "static/media/Resume.PNG": "/reactFolio/static/media/Resume.ae54cd8623391d368048.PNG",
+    "static/media/weather.png": "/reactFolio/static/media/weather.8b48bc21bf2e9d4666d8.png",
     "static/media/resume.pdf": "/reactFolio/static/media/resume.cee1e87c70b0effc42ce.pdf",
+    "static/media/bubble.png": "/reactFolio/static/media/bubble.4c9e19f0b8125f914757.png",
     "static/media/logo.png": "/reactFolio/static/media/logo.9445c591aad1cd634e31.png",
+    "static/media/team.png": "/reactFolio/static/media/team.634d82d715071dd16f02.png",
     "static/media/logo.svg": "/reactFolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactFolio/index.html",
-    "main.512927b1.css.map": "/reactFolio/static/css/main.512927b1.css.map",
-    "main.60945c41.js.map": "/reactFolio/static/js/main.60945c41.js.map",
+    "main.d6098cec.css.map": "/reactFolio/static/css/main.d6098cec.css.map",
+    "main.68304951.js.map": "/reactFolio/static/js/main.68304951.js.map",
     "787.2e31c416.chunk.js.map": "/reactFolio/static/js/787.2e31c416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.512927b1.css",
-    "static/js/main.60945c41.js"
+    "static/css/main.d6098cec.css",
+    "static/js/main.68304951.js"
   ]
 }
