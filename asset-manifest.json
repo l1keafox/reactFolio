@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactFolio/static/css/main.3492f569.css",
-    "main.js": "/reactFolio/static/js/main.d7df988f.js",
+    "main.css": "/reactFolio/static/css/main.512927b1.css",
+    "main.js": "/reactFolio/static/js/main.60945c41.js",
     "static/js/787.2e31c416.chunk.js": "/reactFolio/static/js/787.2e31c416.chunk.js",
     "static/media/digital-marketing-meeting.jpg": "/reactFolio/static/media/digital-marketing-meeting.c672fcf0b6bd0c33ff16.jpg",
     "static/media/avatar.jpg": "/reactFolio/static/media/avatar.1130aad49a7ca9b25e9f.jpg",
@@ -12,12 +12,12 @@
     "static/media/logo.png": "/reactFolio/static/media/logo.9445c591aad1cd634e31.png",
     "static/media/logo.svg": "/reactFolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactFolio/index.html",
-    "main.3492f569.css.map": "/reactFolio/static/css/main.3492f569.css.map",
-    "main.d7df988f.js.map": "/reactFolio/static/js/main.d7df988f.js.map",
+    "main.512927b1.css.map": "/reactFolio/static/css/main.512927b1.css.map",
+    "main.60945c41.js.map": "/reactFolio/static/js/main.60945c41.js.map",
     "787.2e31c416.chunk.js.map": "/reactFolio/static/js/787.2e31c416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3492f569.css",
-    "static/js/main.d7df988f.js"
+    "static/css/main.512927b1.css",
+    "static/js/main.60945c41.js"
   ]
 }
