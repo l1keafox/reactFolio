@@ -13,6 +13,9 @@ export default function Landing() {
         {/* <h1 className="font-black text-6xl block duration-500 relative" >
           Raymond Lewis. 
         </h1> */}
+        <h1>
+          Raymond Lewis
+        </h1>
       <Transition
           show={isShowing}
           enter="transition-opacity duration-2000"
@@ -23,7 +26,7 @@ export default function Landing() {
           leaveTo="opacity-0"
         >
 
-        <p className= "text-1xl block duration-750 relative text-center">
+        <p className= "text-1xl block relative text-center">
             I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
         </p>
         </Transition>

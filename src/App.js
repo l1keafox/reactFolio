@@ -37,6 +37,7 @@ function App() {
         </Transition>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/reactFolio" element={<Landing />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/content" element={<Content />} />

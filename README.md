@@ -1,70 +1,50 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  # reFolio2
 
-## Available Scripts
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+  Using Node.js this creates a readme.md for future repos.
+  
+  
+  ## Table of Contents 
+  1.  [Usage](#Usage)
+  2.  [Installation](#Installation)
+  3.  [Contributing](#Contributing)
+  4.  [Questions](#Questions)
+  5.  [Tests](#Tests)
+  6.  [License](#License)
+  
+  ## Usage 
+   Run 'node index.js' and answer the prompts given
+  
+  
+  ![Website](/assets/images/readme.PNG)
+  
+  ## Installation 
+   1. Download repo 
+ 2. Run "node index.js"
+  
+  
+  ## Contributing 
+  We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's: 
 
-### `npm start`
+ 1. Reporting a bug
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 2. Discussing the current state of the code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 3. Submitting a fix 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 4. Proposing new features 
+  
+  ## Test 
+   This program only has one mode and no commands or test 
+  
+  
+  ## Questions
+  <a href='https://github.com/l1keafox'>l1keafox github.</a> 
+  
+  <a href="mailto: raymond.ed.lewis@gmail.com">Email :raymond.ed.lewis@gmail.com</a>
+  
+  ## License
+  [MIT](https://choosealicense.com/licenses/mit/)
+  
