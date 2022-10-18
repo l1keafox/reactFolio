@@ -9,7 +9,7 @@ export default function Landing() {
   },[]);
 
   return (
-    <header >
+    <header className='columns-2 mx-auto'>
         {/* <h1 className="font-black text-6xl block duration-500 relative" >
           Raymond Lewis. 
         </h1> */}
@@ -30,6 +30,7 @@ export default function Landing() {
             I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
         </p>
         </Transition>
+        <h2> My skillset</h2>
 
     </header>
   )

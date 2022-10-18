@@ -60,11 +60,12 @@ export default function content() {
   var i = 0;
   return (
     <div>
-      <h1> My Projects </h1>
+      <h1 className="text-center text-2xl"> My Projects </h1>
+      <div className ='grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-1'> 
       {portFolio.map((thought, index) => (
         <div className="max-w-sm w-full lg:max-w-full lg:flex p-2 " key={index}>
           <img
-            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+            className="h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
             src={thought.img}
           />
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -91,6 +92,7 @@ export default function content() {
           </div>
         </div>
       ))}
+      </div>
       {/* 
       <Card style={{ width: '18rem' }} key="{i++}">
       <Card.Img variant="top" src={thought.img} />
