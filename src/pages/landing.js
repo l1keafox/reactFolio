@@ -12,6 +12,7 @@ import {
   SiHandlebarsdotjs,
 } from "react-icons/si";
 import { FaNode, FaNpm, FaReact } from "react-icons/fa";
+
 export default function Landing() {
   const [isShowing, setIsShowing] = useState(false)
   useEffect(() => {
@@ -45,6 +46,15 @@ export default function Landing() {
         <br></br>
         <p  className= "text-5xl block relative text-center font-ubuntu"> my skillset</p>
         <br></br>
+        <Transition
+          show={isShowing}
+          enter="transform transition duration-[400ms]"
+          enterFrom="opacity-0 rotate-[-120deg] scale-50"
+          enterTo="opacity-100 rotate-0 scale-100"
+          leave="transform duration-200 transition ease-in-out"
+          leaveFrom="opacity-100 rotate-0 scale-100"
+          leaveTo="opacity-0 scale-95"
+        >
         <div className= "flex  justify-center items-center">
             <FaBeer className={icon} />
             <SiHtml5 className={icon}></SiHtml5>
@@ -59,7 +69,8 @@ export default function Landing() {
             <SiSocketdotio className = {icon} />
             <SiGraphql className = {icon} /> 
         </div>
-
+        </Transition>    
+            
     </header>
   )
 }

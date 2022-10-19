@@ -21,8 +21,8 @@
   ![Website](/assets/images/readme.PNG)
   
   ## Installation 
-   1. Download repo 
- 2. Run "node index.js"
+  1. Download repo 
+  2. Run "node index.js"
   
   
   ## Contributing 
