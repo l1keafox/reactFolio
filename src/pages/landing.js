@@ -36,11 +36,15 @@ export default function Landing() {
           leaveTo="opacity-0"
         >
 
-        <p className= "text-1xl block relative text-center">
+        <p className= "text-5xl block relative text-center font-ubuntu">
             I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
         </p>
         </Transition>
-        <h2 className = "text-center"> My skillset</h2>
+        {/* <h2 className = "text-center"> My skillset</h2> */}
+        <br></br>
+        <br></br>
+        <p  className= "text-5xl block relative text-center font-ubuntu"> my skillset</p>
+        <br></br>
         <div className= "flex  justify-center items-center">
             <FaBeer className={icon} />
             <SiHtml5 className={icon}></SiHtml5>

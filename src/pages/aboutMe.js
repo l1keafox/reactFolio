@@ -4,8 +4,8 @@ export default function content() {
   return (
   <>
       <h1 className = "text-3xl font-bold text-center"> About Me </h1>
-      <div  className = " flex">
-      <img  className="p-2" src={avatar}  style={{ width: "20%", height: "20%" }} />
+      <div  className = "flex">
+      <img  className="w-80 h-80" src={avatar}/>
       <div className = "p-2">
       <p>
         Hello! My name is Raymond, from Boulder Colorado, I am a South Korean adoptee who was adopted with my older brother and sister when I was 5 years old.

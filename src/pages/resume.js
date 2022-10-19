@@ -3,12 +3,12 @@ import Pdf from './resume.pdf';
 import pdfImg from '../components/assets/images/Resume.PNG'
 
 export default function Resume() {
- //
+ // style={{ width: "60%", height: "50%" }}
   return (
     <>
-        <h3>Resume</h3>
-      <img src={pdfImg} style={{ width: "50%", height: "50%" }} />
-      <a href = {Pdf} target = "_blank">Download Pdf</a>    
+      <a className=' items-center justify-center' href = {Pdf} target = "_blank">Download Pdf</a>    
+      <img src={pdfImg} />
+      
       </>
   )
 }
