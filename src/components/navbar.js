@@ -1,13 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import logo from './assets/images/logo.png'
-import { Switch } from '@headlessui/react'
 import { Link } from "react-router-dom";
-
-export default function Navbar({timedUnMount}) {
-  const [enabled, setEnabled] = useState(false);
+export default function navbar(prop) {
   //<img src={logo} style={{ width: "100%", height: "50px" }}></img>
   //onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-  console.log(timedUnMount)
   return (
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -23,13 +19,11 @@ export default function Navbar({timedUnMount}) {
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <Link className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" onClick = {timedUnMount} > Home </Link> 
-              {/* to={{ pathname: "/" }} */}
+              <Link className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" to={{ pathname: "/" }}> Home </Link>
             </li>
-            {/* <li>
-              <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onClick = {timedUnMount}> About Me </Link> */}
-              {/* to={{ pathname: "/aboutMe" }} */}
-            {/* </li>
+            <li>
+              <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to={{ pathname: "/aboutMe" }}> About Me </Link>
+            </li>
             <li>
               <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to={{ pathname: "/content" }}> Portfolios </Link>
             </li>
@@ -38,22 +32,6 @@ export default function Navbar({timedUnMount}) {
             </li>
             <li>
               <Link className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to={{ pathname: "/resume" }}> Resume </Link>
-            </li>
-            <li> */}
-            {/* <Switch
-      checked={enabled}
-      onChange={setEnabled}
-      className={`${
-        enabled ? 'bg-blue-600' : 'bg-gray-200'
-      } relative inline-flex h-6 w-11 items-center rounded-full`}
-    >
-      <span className="sr-only">Enable notifications</span>
-      <span
-        className={`${
-          enabled ? 'translate-x-6' : 'translate-x-1'
-        } inline-block h-4 w-4 transform rounded-full bg-white transition`}
-      />
-    </Switch>  */}
             </li>
           </ul>
         </div>

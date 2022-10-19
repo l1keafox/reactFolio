@@ -13,49 +13,18 @@ import Resume from "./pages/resume";
 
 function App() {
   const [isShowing, setIsShowing] = useState(false);
-  const [showPage, setShowPage] = useState(false);
-  const [stage, setStage] = useState("page-bg onLoad");
-
-
-  // const navLink = (e) => {
-  //   console.log(e.target);
-  //   //setStage(e.target.getAttribute("data-nav"));
-  // };
   const navLink = (e) => {
-    setStage(e.target.getAttribute("data-nav"));
+    console.log(e.target);
+    //setStage(e.target.getAttribute("data-nav"));
   };
   useEffect(() => {
     // Update the document title using the browser API
     setIsShowing(true);
-    setShowPage(true);
   }, []);
-  const timed = function (e) {
-    console.log("here", e.target.innerText);
-    setShowPage(false);
-    setTimeout(() => { 
-      //console.log('hi')
-
-    }, 1000)    
-  };
-  let displayContent = <Landing />;
-
-  switch (stage) {
-    // case "aboutMe":
-    //   displayContent = <AboutMe />;
-    //   break;
-    // case "contact":
-    //   displayContent = <Contact />;
-    //   break;
-    // case "resume":
-    //   displayContent = <Resume />;
-    //   break;
-    default:
-      displayContent = <Landing />;
-      break;
-  }
 
   return (
     <div className="flex flex-col h-screen justify-between">
+      <Router>
         <Transition
           show={isShowing}
           enter="transform transition duration-[400ms]"
@@ -65,14 +34,20 @@ function App() {
           leaveFrom="opacity-100 rotate-0 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          {/* <Navbar  timedUnMount={timed} /> */}
+          <Navbar chng={navLink} />
         </Transition>
-        {showPage ? (
-          displayContent
-        ) : (
-          <div></div>
-        )}
-        <Footer />
+        <Routes>
+          <Route path="/" element={<Landing  />} />
+          <Route path="/reactFolio" element={<Landing />} />
+          <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/content" element={<Content />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+        <Footer  />
+
+      </Router>
+
     </div>
   );
 }
