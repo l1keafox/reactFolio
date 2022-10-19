@@ -37,7 +37,7 @@ export default function Landing() {
         >
 
         <p className= "text-5xl block relative text-center font-ubuntu">
-            I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
+            I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes and relationships.
         </p>
         </Transition>
         {/* <h2 className = "text-center"> My skillset</h2> */}
