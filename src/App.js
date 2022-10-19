@@ -4,6 +4,7 @@ import { Transition } from "@headlessui/react";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import Landing from "./pages/landing";
 import AboutMe from "./pages/aboutMe";
 import Contact from "./pages/contact";
@@ -22,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col h-screen justify-between">
       <Router>
         <Transition
           show={isShowing}
@@ -36,15 +37,18 @@ function App() {
           <Navbar chng={navLink} />
         </Transition>
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Landing  />} />
           <Route path="/reactFolio" element={<Landing />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/content" element={<Content />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Footer  />
+
       </Router>
-    </>
+
+    </div>
   );
 }
 
