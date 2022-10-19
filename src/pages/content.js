@@ -32,13 +32,6 @@ export default function content() {
       deployLink: "https://l1keafox.github.io/RealTimeCommodities/",
     },
     {
-      title: "Refractoring",
-      description: "Refractoring",
-      img: market,
-      repoLink: "https://github.com/l1keafox/middleWhere",
-      deployLink: "https://limitless-temple-38712.herokuapp.com/",
-    },
-    {
       title: "Weather DashBoard",
       description: "Get weather 5 days forward",
       img: weather,
