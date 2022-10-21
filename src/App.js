@@ -13,11 +13,11 @@ import Resume from "./pages/resume";
 
 function App() {
   const [navBarShowing, setNavbarShowing] = useState(false);
-  const [stage, setStage] = useState("page-bg onLoad");
-  const [loading, setLoading] = useState(false);
-
+  const [stage, setStage] = useState("landing");
+  
   const [loadLanding, setLoadLanding] = useState(false);
   const [loadAboutMe, setLoadAboutMe] = useState(false);
+  
   const [loadPortfolio, setLoadPortfolio] = useState(false);
   const [loadContact, setLoadContact] = useState(false);
   const [loadResume, setLoadResume] = useState(false);
@@ -26,12 +26,6 @@ function App() {
     // setLoading(true);
     //setLoadLanding(false);
     setAllFalseBut(e.target.getAttribute("data-nav"));
-    console.log(
-      e.target.getAttribute("data-nav"),
-      loading,
-
-      "Loading?"
-    );
   };
   useEffect(() => {
     // Update the document title using the browser API

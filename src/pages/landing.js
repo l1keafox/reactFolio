@@ -20,7 +20,6 @@ export default function Landing(prop) {
   },[]);
   useEffect(() => {
     // Update the document title using the browser API
-    console.log(prop.isShowing);
     setIsShowing(prop.isShowing);
   },[prop.isShowing]);
   

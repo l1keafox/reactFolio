@@ -1,11 +1,21 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import middle from "../components/assets/images/middle.PNG";
 import projectOne from "../components/assets/images/projectOne.PNG";
 import projectThree from "../components/assets/images/bubble.png";
 import team from "../components/assets/images/team.png";
 import weather from "../components/assets/images/weather.png";
 import { Transition } from '@headlessui/react';
-export default function content({isShowing}) {
+export default function Content(prop) {
+  const [isShowing, setIsShowing] = useState(false)
+  useEffect(() => {
+    // Update the document title using the browser API
+    setIsShowing(true);
+  },[]);
+  useEffect(() => {
+    // Update the document title using the browser API
+    setIsShowing(prop.isShowing);
+  },[prop.isShowing]);
+
   const portFolio = [
     {
       title: "Bubble Dungeonz",

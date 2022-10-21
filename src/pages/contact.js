@@ -1,7 +1,17 @@
-import React, { useState, useRef } from "react";
+import React, { useEffect,useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Transition } from '@headlessui/react';
-export default function Contact({isShowing}) {
+export default function Contact(prop) {
+  const [isShowing, setIsShowing] = useState(false)
+  useEffect(() => {
+    // Update the document title using the browser API
+    setIsShowing(true);
+  },[]);
+  useEffect(() => {
+    // Update the document title using the browser API
+    setIsShowing(prop.isShowing);
+  },[prop.isShowing]);
+
   let [email, setEmail] = useState("");
   let [name, setName] = useState("");
   let [message, setMessage] = useState("");
@@ -48,10 +58,10 @@ export default function Contact({isShowing}) {
     <div className="justify-center items-center content-center p-32">
       <Transition
           show={isShowing}
-          enter="transition-opacity duration-500"
+          enter="transition-opacity duration-750"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-opacity duration-1000"
+          leave="transition-opacity duration-750"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
