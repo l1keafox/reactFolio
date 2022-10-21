@@ -33,25 +33,19 @@ export default function Contact(prop) {
   const sendEmail = async (e) => {
     e.preventDefault();
     console.log(e.target, "submit!", form.current);
+    if(form.current === '') console.log('bad!');
     let result = await emailjs.sendForm(
       "service_3l5kfbj",
       "template_7630s4a",
       form.current,
       "b3A_HBPJ0CCCA_D0d"
-    );
-    // .then(
-    //   (result) => {
-    //     console.log(result.text);
-    //     setContact({
-    //       email:"",
-    //       name:"",
-    //       message:""
-    //     });
-    //   },
-    //   (error) =>{
-    //       console.log(error.text);
-    //   }
-    // );
+    )
+    alert("Thank you for sendin me a message,I will get back too you asap");
+    console.log(result.text);
+    setEmail("");
+    setName("");
+    setMessage("");
+
   };
 
   return (

@@ -19,7 +19,7 @@ export default function Content(prop) {
   const portFolio = [
     {
       title: "Bubble Dungeonz",
-      description: "Multiplayer game!",
+      description: "A platform for game developers to host multi/single player games to interact with other users. Features a multiplayer bubble popping game, saved chat groups and customized display settings",
       img: projectThree,
       repoLink: "https://github.com/l1keafox/bubbleDungeonz",
       deployLink: "https://bubbledungeonz.herokuapp.com/",
@@ -27,28 +27,28 @@ export default function Content(prop) {
 
     {
       title: "Middle-Where",
-      description: "To determine where a group of people should meet",
+      description: "A web app to find a centralized location for a group of friends. Users can create accounts and login, using google maps to display location of friends and the central meeting spot",
       img: middle,
       repoLink: "https://github.com/l1keafox/middleWhere",
       deployLink: "https://limitless-temple-38712.herokuapp.com/",
     },
     {
       title: "RealTimeCommodities",
-      description: "Using api's to get recent data.",
+      description: "A web app that will pull commodities news/prices through an API call. Uses google graphs to show history of commodity prices.",
       img: projectOne,
       repoLink: "https://github.com/l1keafox/RealTimeCommodities",
       deployLink: "https://l1keafox.github.io/RealTimeCommodities/",
     },
     {
       title: "Weather DashBoard",
-      description: "Get weather 5 days forward",
+      description: "Web app that uses api calls to get a 5 day forecast for a city.",
       img: weather,
       repoLink: "https://github.com/l1keafox/weatherDashboard",
       deployLink: "https://l1keafox.github.io/weatherDashboard/",
     },
     {
       title: "Team maker",
-      description: "Command line interface, html out",
+      description: "Command line interface, for an team and it will output an html.",
       img: team,
       repoLink: "https://github.com/l1keafox/myTeamSetting",
       deployLink: "https://l1keafox.github.io/myTeamSetting/",
