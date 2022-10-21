@@ -61,16 +61,17 @@ export default function Content(prop) {
   var i = 0;
   return (
     <div>
+
+
       <Transition
           show={isShowing}
-          enter="transition-opacity duration-500"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-1000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+        enter="transform transition duration-[400ms]"
+        enterFrom="opacity-0 rotate-[-120deg] scale-50"
+        enterTo="opacity-100 rotate-0 scale-100"
+        leave="transform duration-200 transition ease-in-out"
+        leaveFrom="opacity-100 rotate-0 scale-100"
+        leaveTo="opacity-0 scale-95"
         >
-
       <h1 className="text-center text-2xl"> My Projects </h1>
       <div className ='grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-1'> 
       {portFolio.map((thought, index) => (

@@ -58,12 +58,12 @@ export default function Contact(prop) {
     <div className="justify-center items-center content-center p-32">
       <Transition
           show={isShowing}
-          enter="transition-opacity duration-750"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-750"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+          enter="transition duration-1000 ease-in-out"
+          enterFrom="transform translate-y-full opacity-0 "
+          enterTo="transform translate-y-0  opacity-100"
+          leave="transition duration-1000 ease-in-out"
+          leaveFrom="transform translate-y-0  opacity-100"
+          leaveTo="transform translate-y-full  opacity-0"
         >
 
     <form ref={form} onSubmit={sendEmail} className="emailForm flex flex-col">
