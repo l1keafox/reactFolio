@@ -1,8 +1,21 @@
 import React from 'react'
 import avatar from '../components/assets/images/avatar.jpg'
-export default function content() {
+import { Transition } from "@headlessui/react";
+export default function Content({isShowing}) {
+
+
   return (
   <>
+      <Transition
+          show={isShowing}
+          enter="transition-opacity duration-2000"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-2000"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+
       <h1 className = "text-3xl font-bold text-center"> About Me </h1>
       <div  className = "flex">
       <img  className="w-80 h-80" src={avatar}/>
@@ -27,6 +40,8 @@ export default function content() {
       </p>
       </div>
     </div>
+    </Transition>
     </>
+
   )
 }

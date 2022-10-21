@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
-export default function Contact() {
+import { Transition } from '@headlessui/react';
+export default function Contact({isShowing}) {
   let [email, setEmail] = useState("");
   let [name, setName] = useState("");
   let [message, setMessage] = useState("");
@@ -46,6 +46,16 @@ export default function Contact() {
 
   return (
     <div className="justify-center items-center content-center p-32">
+      <Transition
+          show={isShowing}
+          enter="transition-opacity duration-500"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-1000"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+
     <form ref={form} onSubmit={sendEmail} className="emailForm flex flex-col">
       <label htmlFor="nameInput" className="labelContact ">
         Name:
@@ -84,6 +94,7 @@ export default function Contact() {
       />
       <input className="contactBtn" type="submit" value="Send" />
     </form>
+    </Transition>
     </div>
   );
 }
