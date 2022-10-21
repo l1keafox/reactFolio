@@ -17,17 +17,18 @@ export default function Content(prop) {
   <>
       <Transition
           show={isShowing}
-          enter="transition-opacity duration-2000"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-2000"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
+          enter="transition duration-1000 ease-in-out"
+          enterFrom="transform translate-x-full"
+          enterTo="transform translate-x-0"
+          leave="transition duration-1000 ease-in-out"
+          leaveFrom="transform translate-x-0"
+          leaveTo="transform translate-x-full"
         >
-
+          
       <h1 className = "text-3xl font-bold text-center"> About Me </h1>
       <div  className = "flex">
       <img  className="w-80 h-80" src={avatar}/>
+
       <div className = "p-2">
       <p>
         Hello! My name is Raymond, from Boulder Colorado, I am a South Korean adoptee who was adopted with my older brother and sister when I was 5 years old.
@@ -50,6 +51,7 @@ export default function Content(prop) {
       </div>
     </div>
     </Transition>
+
     </>
 
   )
