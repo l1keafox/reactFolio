@@ -1,13 +1,11 @@
 import React from "react";
 import middle from "../components/assets/images/middle.PNG";
-import market from "../components/assets/images/digital-marketing-meeting.jpg";
 import projectOne from "../components/assets/images/projectOne.PNG";
 import projectThree from "../components/assets/images/bubble.png";
 import team from "../components/assets/images/team.png";
 import weather from "../components/assets/images/weather.png";
-import { Link } from "react-router-dom";
-
-export default function content() {
+import { Transition } from '@headlessui/react';
+export default function content({isShowing}) {
   const portFolio = [
     {
       title: "Bubble Dungeonz",
@@ -53,6 +51,16 @@ export default function content() {
   var i = 0;
   return (
     <div>
+      <Transition
+          show={isShowing}
+          enter="transition-opacity duration-500"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-1000"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+
       <h1 className="text-center text-2xl"> My Projects </h1>
       <div className ='grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-1'> 
       {portFolio.map((thought, index) => (
@@ -86,22 +94,8 @@ export default function content() {
         </div>
       ))}
       </div>
-      {/* 
-      <Card style={{ width: '18rem' }} key="{i++}">
-      <Card.Img variant="top" src={thought.img} />
-      <Card.Body>
-        <Card.Title>{thought.title}</Card.Title>
-        <Card.Text>
-          {thought.description}
-        </Card.Text>
-        <Card.Link href={thought.repoLink}>Repo link</Card.Link>
-        <Card.Link href={thought.deployLink}>Deploy Link</Card.Link>
-      </Card.Body>
-      </Card>
-      ))} */}
-      {/*
+      </Transition>
 
-        */}
     </div>
   );
 }
