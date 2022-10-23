@@ -63,25 +63,30 @@ export default function Content(prop) {
     <div>
 
 
-      <Transition
-          show={isShowing}
-        enter="transform transition duration-[400ms]"
-        enterFrom="opacity-0 rotate-[-120deg] scale-50"
-        enterTo="opacity-100 rotate-0 scale-100"
-        leave="transform duration-200 transition ease-in-out"
-        leaveFrom="opacity-100 rotate-0 scale-100"
-        leaveTo="opacity-0 scale-95"
-        >
+
           
-      <h1 className="text-center text-7xl "> My Projects </h1>
-      <div className ='flex flex-col  gap-x-2 gap-y-1 text-center items-center justify-center'> 
+      <h1 className="text-center text-5xl  "> My Projects </h1>
+      <div className ='flex flex-col  py-8 gap-x-2 gap-y-1 text-center items-center justify-center'> 
       {portFolio.map((thought, index) => (
-        <div className="max-w-sm w-1/2 lg:max-w-full lg:flex p-2 " key={index}>
+
+    //   <Transition
+    //   show={isShowing}
+    //   enter="transition duration-1000 ease-in-out"
+    //   enterFrom="transform translate-x-full opacity-0 "
+    //   enterTo="transform translate-x-0  opacity-100"
+    //   leave="transition duration-1000 ease-in-out"
+    //   leaveFrom="transform translate-x-0  opacity-100"
+    //   leaveTo="transform translate-y-full  opacity-0"
+    // >
+    index%2 
+?
+        <div className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 " key={index}>
           <img
-            className="h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+            className="even:rotate-1 h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+
             src={thought.img}
           />
-          <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div className="bg-slate-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
               <div className="text-gray-900 font-bold text-3xl mb-2">
                 {thought.title}
@@ -104,9 +109,41 @@ export default function Content(prop) {
             </div>
           </div>
         </div>
+:
+<div className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 " key={index}>
+<div className="bg-slate-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+  <div className="mb-8">
+    <div className="text-gray-900 font-bold text-3xl mb-2">
+      {thought.title}
+    </div>
+    <p className="text-gray-700 text-base">{thought.description}</p>
+  </div>
+  <div className="flex items-center  justify-center">
+    <div className="text-sm">
+      <a href={thought.repoLink} target="_blank">
+        <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 m-2 rounded">
+          Repo
+        </button>
+      </a>
+      <a href={thought.deployLink} target="_blank">
+        <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded">
+          DeployLink
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+<img
+  className="odd:rotate-1 h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+
+  src={thought.img}
+/>
+</div>
+    
+
+//     </Transition>
       ))}
       </div>
-      </Transition>
 
     </div>
   );
