@@ -73,22 +73,22 @@ export default function Content(prop) {
         leaveTo="opacity-0 scale-95"
         >
           
-      <h1 className="text-center text-2xl"> My Projects </h1>
-      <div className ='grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-1'> 
+      <h1 className="text-center text-7xl "> My Projects </h1>
+      <div className ='flex flex-col  gap-x-2 gap-y-1 text-center items-center justify-center'> 
       {portFolio.map((thought, index) => (
-        <div className="max-w-sm w-full lg:max-w-full lg:flex p-2 " key={index}>
+        <div className="max-w-sm w-1/2 lg:max-w-full lg:flex p-2 " key={index}>
           <img
             className="h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
             src={thought.img}
           />
           <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
             <div className="mb-8">
-              <div className="text-gray-900 font-bold text-xl mb-2">
+              <div className="text-gray-900 font-bold text-3xl mb-2">
                 {thought.title}
               </div>
               <p className="text-gray-700 text-base">{thought.description}</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center  justify-center">
               <div className="text-sm">
                 <a href={thought.repoLink} target="_blank">
                   <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 m-2 rounded">
@@ -96,7 +96,7 @@ export default function Content(prop) {
                   </button>
                 </a>
                 <a href={thought.deployLink} target="_blank">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-gray-600 font-bold py-2 px-4 rounded">
+                  <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded">
                     DeployLink
                   </button>
                 </a>
