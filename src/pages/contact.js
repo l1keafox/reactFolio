@@ -33,7 +33,11 @@ export default function Contact(prop) {
   const sendEmail = async (e) => {
     e.preventDefault();
     console.log(e.target, "submit!", form.current);
-    if(form.current === '') console.log('bad!');
+    if(form.current === '') {
+      console.log('bad!');
+      alert("Please fill out the form");
+      return;
+    }
     let result = await emailjs.sendForm(
       "service_3l5kfbj",
       "template_7630s4a",
@@ -96,7 +100,8 @@ export default function Contact(prop) {
         placeholder="What would you like to tell me?"
         onChange={handleMsg}
       />
-      <input className="contactBtn" type="submit" value="Send" />
+      <button className="contactBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"  type="submit" value="Send" >Send
+      </button>
     </form>
     </Transition>
     </div>

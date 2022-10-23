@@ -72,6 +72,7 @@ export default function Content(prop) {
         leaveFrom="opacity-100 rotate-0 scale-100"
         leaveTo="opacity-0 scale-95"
         >
+          
       <h1 className="text-center text-2xl"> My Projects </h1>
       <div className ='grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-1'> 
       {portFolio.map((thought, index) => (
