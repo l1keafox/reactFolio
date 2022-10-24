@@ -37,7 +37,7 @@ const styles = {
 export default function footer() {
   const icon = "w-10 h-10  p-1  ";
   return (
-    <footer className = "flex items-center justify-around font-mono">
+    <footer className = "flex items-center justify-around font-mono py-2">
         {/* <h3 ></h3>  
         <h3 ></h3> */}
         <a href="tel:+13034752882" className= "flex flex-col items-center justify-center text-red-500"><BsTelephone className={icon} /></a>

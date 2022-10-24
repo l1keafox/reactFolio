@@ -11,7 +11,7 @@ export default function Navbar({navLink}) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                <a href="#" className="flex">
           
-                 <h1 className='font-serif text-2xl italic font-extrabold'><TypeIt>Raymond Lewis</TypeIt></h1>
+                 <h1 className='font-serif text-2xl italic font-extrabold'><TypeIt> Raymond Lewis</TypeIt></h1>
                </a>
       
             <button
@@ -37,7 +37,7 @@ export default function Navbar({navLink}) {
 
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-mono md:font-mono">
             <li>
-              <p className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" onClick = {navLink}  data-nav="Home"> Home </p>
+              <p className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" onClick = {navLink}  data-nav="Home"> Home </p>
             </li>
             <li>
               <p className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"  onClick = {navLink}  data-nav="aboutMe"> About Me </p>
