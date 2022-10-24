@@ -45,7 +45,7 @@ export default function Content(prop) {
     {
       title: "Weather DashBoard",
       description:
-        "Web app that uses api calls to get a 5 day forecast for a city.",
+        "An web app just made with the front end with bootstrap, jquery and openweathermap.org for the api. It will take in cities and forecast 5 days in the future ",
       img: weather,
       repoLink: "https://github.com/l1keafox/weatherDashboard",
       deployLink: "https://l1keafox.github.io/weatherDashboard/",
@@ -53,7 +53,7 @@ export default function Content(prop) {
     {
       title: "Team maker",
       description:
-        "Command line interface, for an team and it will output an html.",
+        "A node.js application that uses inquire to ask question in the command line. Afterwards it will create an html page of the team you have entered in. ",
       img: team,
       repoLink: "https://github.com/l1keafox/myTeamSetting",
       deployLink: "https://l1keafox.github.io/myTeamSetting/",

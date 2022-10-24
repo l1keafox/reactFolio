@@ -59,7 +59,6 @@ export default function Landing(prop) {
         <br></br>
 
         <div className= "flex  justify-center items-center">
-            <FaBeer className={icon} />
             <SiHtml5 className={icon}></SiHtml5>
             <SiBootstrap className={icon}></SiBootstrap>
             <SiJavascript className={icon}></SiJavascript>
