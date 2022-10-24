@@ -83,7 +83,7 @@ export default function Content(prop) {
                 key={index}
               >
                 <img
-                  className="even:rotate-1 h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  className="even:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                   src={thought.img}
                 />
                 <div className="bg-slate-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -141,7 +141,7 @@ export default function Content(prop) {
                   </div>
                 </div>
                 <img
-                  className="odd:rotate-1 h-48 lg:h-auto w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  className="odd:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                   src={thought.img}
                 />
               </div>
