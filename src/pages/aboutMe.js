@@ -29,9 +29,9 @@ export default function Content(prop) {
       <div  className = "flex">
       <img  className="w-80 h-80" src={avatar}/>
 
-      <div className = "p-2">
+      <div className = "p-2 font-serif">
       <p>
-        Hello! My name is Raymond, from Boulder Colorado, I am a South Korean adoptee who was adopted with my older brother and sister when I was 5 years old.
+        Hello! My name is Ray and I am from Boulder, Colorado. I am a South Korean adoptee who was adopted with my older brother and sister when I was five years old.
       </p>
       <br />
       <p>
@@ -40,7 +40,7 @@ export default function Content(prop) {
       </p>
       <br />
       <p>
-        My first programming book was when I was 14 and on a roadtrip. Without a computer I read through C textbook.
+        My first programming book was when I was fourteen and on a roadtrip. Without a computer I read through C textbook.
         I always thought I would become a programmer, but life had different plans for me other than college. I would continue to program for fun, learning actionScript and later learning JavaScript through a game called Screeps. 
       </p>
       <br />

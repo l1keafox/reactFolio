@@ -41,7 +41,7 @@ export default function Landing(prop) {
         >
 
         <p className= "text-5xl block relative text-center font-ubuntu">
-            I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes or relationships.
+            I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes and relationships.
         </p>
         </Transition>
         <br></br>

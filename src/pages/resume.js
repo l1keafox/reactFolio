@@ -27,7 +27,7 @@ export default function Resume(prop) {
       >
         <div className="flex flex-col items-center">
           <a className="items-center justify-center" href={Pdf} target="_blank">
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Download Pdf
             </button>
           </a>

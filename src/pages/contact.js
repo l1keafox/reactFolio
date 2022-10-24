@@ -64,7 +64,7 @@ export default function Contact(prop) {
           leaveTo="transform translate-y-full  opacity-0"
         >
 
-    <form ref={form} onSubmit={sendEmail} className="emailForm flex flex-col">
+    <form ref={form} onSubmit={sendEmail} className="emailForm flex flex-col ">
       <label htmlFor="nameInput" className="labelContact ">
         Name:
       </label>

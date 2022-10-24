@@ -29,7 +29,7 @@ export default function Content(prop) {
     {
       title: "Middle-Where",
       description:
-        "A web app to find a centralized location for a group of friends. Users can create accounts and login, using google maps to display location of friends and the central meeting spot",
+        "A web app to find a centralized location for a group of friends. Users can create accounts and login, using google maps to display location of friends and the central meeting spot. This was my second group project of six people, I conceived the idea and pushed for MVP",
       img: middle,
       repoLink: "https://github.com/l1keafox/middleWhere",
       deployLink: "https://limitless-temple-38712.herokuapp.com/",
@@ -37,7 +37,7 @@ export default function Content(prop) {
     {
       title: "RealTimeCommodities",
       description:
-        "A web app that will pull commodities news/prices through an API call. Uses google graphs to show history of commodity prices.",
+        "My first group project, taking 5 people to make. It is a web app that will pull commodities news/prices through an API call. Uses google graphs to show history of commodity prices.",
       img: projectOne,
       repoLink: "https://github.com/l1keafox/RealTimeCommodities",
       deployLink: "https://l1keafox.github.io/RealTimeCommodities/",
@@ -74,8 +74,8 @@ export default function Content(prop) {
         leaveFrom="transform translate-x-0  opacity-100"
         leaveTo="transform translate-y-full  opacity-0"
       >
-        <h1 className="text-center text-5xl  "> My Projects </h1>
-        <div className="flex flex-col  py-8 gap-x-2 gap-y-1 text-center items-center justify-center">
+        <h1 className="text-center text-5xl font-mono "> My Projects </h1>
+        <div className="flex flex-col  py-8 gap-x-2 gap-y-1 text-center items-center justify-center font-mono">
           {portFolio.map((thought, index) =>
             index % 2 ? (
               <div
