@@ -46,7 +46,7 @@ export default function Content(prop) {
             <br />
             <p>
               My first programming book was when I was fourteen and on a
-              roadtrip. Without a computer I read through C textbook. I always
+              roadtrip. Without a computer, I read through a C textbook. I always
               thought I would become a programmer, but life had different plans
               for me other than college. I would continue to program for fun,
               learning actionScript and later learning JavaScript through a game
@@ -62,11 +62,13 @@ export default function Content(prop) {
             </p>
             <br />
             <p>
-              Before and during the pandemic I had two kids. In dreaming about
-              what I wanted for them, I decided that I needed to fulfill a dream
-              in me, and needed to become a professional programmer. I took a
-              bootcamp at DU for 3 months, this taught me how to apply my
-              JavaScript skills in a greater context of the MERN stack.
+              After the pandemic, I decided that I needed to fulfill my team of being a developer, and decided I needed a formal education. 
+              After looking around, I decided on a three month full stack bootcamp from University of Denver. I had some javascript skills from before, but this boot camp taught me how
+              to apply my knowledge in creating an web application. 
+            </p>
+            <br/>
+            <p>
+              After the bootcamp I continue to learn and grow, trying to learn as much technology as possible, because how to learn is what is the most important skill I can develop.
             </p>
             <br />
           </div>
