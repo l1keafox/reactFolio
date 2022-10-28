@@ -9,7 +9,9 @@ import {
   SiMongodb,
   SiSocketdotio,
   SiGraphql,
+  SiTailwindcss,
   SiHandlebarsdotjs,
+  SiTypescript,
 } from "react-icons/si";
 import { FaNode, FaNpm, FaReact } from "react-icons/fa";
 export default function Landing(prop) {
@@ -78,6 +80,10 @@ export default function Landing(prop) {
             <FaReact className={icon}></FaReact>            
             <SiSocketdotio className = {icon} />
             <SiGraphql className = {icon} /> 
+            <SiTailwindcss className = {icon} /> 
+            <SiTypescript className = {icon} /> 
+            
+
         </div>
         </Transition>
     </header>
