@@ -1,6 +1,5 @@
 import { Transition } from '@headlessui/react';
 import { useState ,useEffect} from 'react'
-import { FaBeer } from 'react-icons/fa';
 import {
   SiHtml5,
   SiBootstrap,

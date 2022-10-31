@@ -1,109 +1,65 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Transition } from "@headlessui/react";
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import Header from "./components/header";
 import Landing from "./pages/landing";
 import AboutMe from "./pages/aboutMe";
 import Contact from "./pages/contact";
 import Content from "./pages/content";
 import Resume from "./pages/resume";
 
+
+const Pages = {
+  landing: 'landing',
+  aboutMe: 'aboutMe',
+  portfolios: 'portfolios',
+  contactMe: 'contactMe',
+  resume: 'resume',
+}
+
 function App() {
   const [navBarShowing, setNavbarShowing] = useState(false);
-  const [stage, setStage] = useState("landing");
+  const [stage, setStage] = useState(Pages.landing);
+  const [loading, setLoading] = useState(false);
   
-  const [loadLanding, setLoadLanding] = useState(false);
-  const [loadAboutMe, setLoadAboutMe] = useState(false);
-  
-  const [loadPortfolio, setLoadPortfolio] = useState(false);
-  const [loadContact, setLoadContact] = useState(false);
-  const [loadResume, setLoadResume] = useState(false);
+  let displayContent;
 
-  const navLink = (e) => {
-    // setLoading(true);
-    //setLoadLanding(false);
-    setAllFalseBut(e.target.getAttribute("data-nav"));
-  };
   useEffect(() => {
-    // Update the document title using the browser API
-    setLoadLanding(true);
     setNavbarShowing(true);
+    setLoading(true);
   }, []);
 
-  function setAllFalseBut(notFalse) {
-    setLoadLanding(false);
-    setLoadAboutMe(false);
-    setLoadPortfolio(false);
-    setLoadContact(false);
-    setLoadResume(false);
 
-    switch (notFalse) {
-      case "aboutMe":
-        setTimeout(() => {
-          setStage(notFalse);
-          // setLoading(false);
-          setLoadAboutMe(true);
-        }, 1000);
+  function changeStage(nextStage){
+    console.log(nextStage);
+    setLoading(false);
 
-        break;
-      case "portfolios":
-        setTimeout(() => {
-          setStage(notFalse);
-          // setLoading(false);
-          setLoadPortfolio(true);
-        }, 1000);
-
-        break;
-      case "contactMe":
-        setTimeout(() => {
-          setStage(notFalse);
-          // setLoading(false);
-          setLoadContact(true);
-        }, 1000);
-
-        break;
-
-      case "resume":
-        setTimeout(() => {
-          setStage(notFalse);
-          // setLoading(false);
-          setLoadResume(true);
-        }, 1000);
-
-        break;
-
-      default:
-        setTimeout(() => {
-          setStage(notFalse);
-          // setLoading(false);
-          setLoadLanding(true);
-        }, 1000);
-        break;
-    }
-  }
-  let displayContent = <Landing isShowing={loadLanding} />;
+    setTimeout( () =>{
+      setStage(nextStage);
+      setLoading(true);
+    },1000);
+  };
 
   switch (stage) {
-    case "aboutMe":
-      displayContent = <AboutMe isShowing={loadAboutMe} />;
+    case Pages.aboutMe:
+      displayContent = <AboutMe isShowing={loading} />;
       break;
-    case "contactMe":
-      displayContent = <Contact isShowing={loadContact} />;
+    case Pages.contactMe:
+      displayContent = <Contact isShowing={loading} />;
       break;
-    case "portfolios":
-      displayContent = <Content isShowing={loadPortfolio} />;
+    case Pages.portfolios:
+      displayContent = <Content isShowing={loading} />;
       break;
-    case "resume":
-      displayContent = <Resume isShowing={loadResume} />;
+    case Pages.resume:
+      displayContent = <Resume isShowing={loading} />;
       break;
+    case Pages.landing:
     default:
-      displayContent = <Landing isShowing={loadLanding} />;
+      displayContent = <Landing isShowing={loading} />;
       break;
   }
+  console.log(stage,displayContent);
 
   return (
     <div className="flex flex-col h-screen justify-between">
@@ -116,9 +72,9 @@ function App() {
         leaveFrom="opacity-100 rotate-0 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Navbar navLink={navLink} />
+        <Navbar navLink={(e) => changeStage(e.target.getAttribute("data-nav"))} />
       </Transition>
-      {displayContent}
+      {displayContent ?? <Landing isShowing={loading}/>}
       <Footer />
     </div>
   );
