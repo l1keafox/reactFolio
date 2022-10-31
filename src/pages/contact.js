@@ -4,11 +4,9 @@ import { Transition } from '@headlessui/react';
 export default function Contact(prop) {
   const [isShowing, setIsShowing] = useState(false)
   useEffect(() => {
-    // Update the document title using the browser API
     setIsShowing(true);
   },[]);
   useEffect(() => {
-    // Update the document title using the browser API
     setIsShowing(prop.isShowing);
   },[prop.isShowing]);
 
@@ -45,7 +43,6 @@ export default function Contact(prop) {
       "b3A_HBPJ0CCCA_D0d"
     )
     alert("Thank you for sendin me a message,I will get back too you asap");
-    console.log(result.text);
     setEmail("");
     setName("");
     setMessage("");

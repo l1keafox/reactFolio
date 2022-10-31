@@ -5,6 +5,7 @@ import projectThree from "../components/assets/images/bubble.png";
 import team from "../components/assets/images/team.png";
 import weather from "../components/assets/images/weather.png";
 import { Transition } from "@headlessui/react";
+import Paper from '@mui/material/Paper';
 export default function Content(prop) {
   const [isShowing, setIsShowing] = useState(false);
   useEffect(() => {
@@ -78,7 +79,7 @@ export default function Content(prop) {
         <div className="flex flex-col  py-8 gap-x-2 gap-y-1 text-center items-center justify-center font-mono">
           {portFolio.map((thought, index) =>
             index % 2 ? (
-              <div
+              <Paper
                 className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 py-4 "
                 key={index}
               >
@@ -110,9 +111,9 @@ export default function Content(prop) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Paper>
             ) : (
-              <div
+              <Paper
                 className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 py-4 "
                 key={index}
               >
@@ -144,7 +145,7 @@ export default function Content(prop) {
                   className="odd:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                   src={thought.img}
                 />
-              </div>
+              </Paper>
             )
           )}
         </div>

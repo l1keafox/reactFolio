@@ -4,11 +4,9 @@ import { Transition } from "@headlessui/react";
 export default function Content(prop) {
   const [isShowing, setIsShowing] = useState(false);
   useEffect(() => {
-    // Update the document title using the browser API
     setIsShowing(true);
   }, []);
   useEffect(() => {
-    // Update the document title using the browser API
     setIsShowing(prop.isShowing);
   }, [prop.isShowing]);
 
