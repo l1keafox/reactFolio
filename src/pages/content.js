@@ -79,7 +79,7 @@ export default function Content(prop) {
           {portFolio.map((thought, index) =>
             index % 2 ? (
               <div
-                className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 "
+                className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 py-4 "
                 key={index}
               >
                 <img
@@ -113,7 +113,7 @@ export default function Content(prop) {
               </div>
             ) : (
               <div
-                className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 "
+                className="max-w-sm w-3/4 lg:max-w-full lg:flex p-2 py-4 "
                 key={index}
               >
                 <div className="bg-slate-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">

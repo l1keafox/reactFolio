@@ -2,8 +2,6 @@ import React from 'react'
 import TypeIt from "typeit-react";
 export default function Navbar({navLink}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
-  //<img src={logo} style={{ width: "100%", height: "50px" }}></img>
-  //onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white mb-3">
