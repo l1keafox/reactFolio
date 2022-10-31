@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactFolio/static/css/main.c5947adc.css",
-    "main.js": "/reactFolio/static/js/main.94fef521.js",
+    "main.js": "/reactFolio/static/js/main.096604b3.js",
     "static/js/787.2e31c416.chunk.js": "/reactFolio/static/js/787.2e31c416.chunk.js",
     "static/media/avatar.jpg": "/reactFolio/static/media/avatar.1130aad49a7ca9b25e9f.jpg",
     "static/media/projectOne.PNG": "/reactFolio/static/media/projectOne.bbe97ca89956e8e2062f.PNG",
@@ -13,11 +13,11 @@
     "static/media/team.png": "/reactFolio/static/media/team.634d82d715071dd16f02.png",
     "index.html": "/reactFolio/index.html",
     "main.c5947adc.css.map": "/reactFolio/static/css/main.c5947adc.css.map",
-    "main.94fef521.js.map": "/reactFolio/static/js/main.94fef521.js.map",
+    "main.096604b3.js.map": "/reactFolio/static/js/main.096604b3.js.map",
     "787.2e31c416.chunk.js.map": "/reactFolio/static/js/787.2e31c416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5947adc.css",
-    "static/js/main.94fef521.js"
+    "static/js/main.096604b3.js"
   ]
 }
