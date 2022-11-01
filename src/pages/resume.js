@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import Pdf from "./raymondLewis.pdf";
 import pdfImg from "../components/assets/images/Resume.PNG";
 import { Transition } from "@headlessui/react";
+import Paper from '@mui/material/Paper';
 export default function Resume(prop) {
   // style={{ width: "60%", height: "50%" }}
   const [isShowing, setIsShowing] = useState(false)
@@ -26,12 +27,14 @@ export default function Resume(prop) {
         leaveTo="rotate-[-360deg] scale-0"
       >
         <div className="flex flex-col items-center">
-          <a className="items-center justify-center" href={Pdf} target="_blank">
-            <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a className="items-center justify-center p-3" href={Pdf} target="_blank">
+            <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
               Download Pdf
             </button>
           </a>
-          <img src={pdfImg} />
+          <Paper elevation={4} >
+            <img src={pdfImg} />
+          </Paper>
         </div>
       </Transition>
     </>
