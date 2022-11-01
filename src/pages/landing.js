@@ -40,7 +40,8 @@ export default function Landing(prop) {
 
         <div className="w-4/5 mx-auto">
           <div className="flex justify-center items-center space-x-16 text-5xl font-ubuntu">
-            <p>I am a full stack software engineer with a background in malware research. I enjoy the process of creating programs, websites, clothes and relationships.</p>
+            <p>I am a  
+              <span className="text-green-400"> full stack </span>software engineer with a background in <span className="text-red-600">malware</span> research. I enjoy the process of creating programs, websites, clothes and relationships.</p>
           </div>
         </div>
 
