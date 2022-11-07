@@ -60,7 +60,7 @@ export default function Landing(prop) {
         <p  className= "text-5xl block relative text-center font-ubuntu"> my skillset</p>
         <br></br>
 
-        <div className= "flex  justify-center items-center">
+        <div className= "flex flex-wrap justify-center items-center">
           <Tooltip title="HTML5" arrow><div>
             <SiHtml5  className={icon}>Hi</SiHtml5>
           </div></Tooltip>
