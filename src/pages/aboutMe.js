@@ -26,7 +26,7 @@ export default function Content(prop) {
         <div className="md:flex w-4/5 mx-auto">
           <img className="w-80 h-80" src={avatar} />
 
-          <div className="p-2 font-serif">
+          <div className="p-2 font-serif dark:text-slate-300">
             <p>
               Hello! My name is Ray and I am from Boulder, Colorado. I am a
               South Korean adoptee who was adopted with my older brother and

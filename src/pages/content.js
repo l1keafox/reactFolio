@@ -3,6 +3,7 @@ import middle from "../components/assets/images/middle.PNG";
 import projectOne from "../components/assets/images/projectOne.PNG";
 import projectThree from "../components/assets/images/bubble.png";
 import team from "../components/assets/images/team.png";
+import portfolio from "../components/assets/images/portfolio.PNG";
 import weather from "../components/assets/images/weather.png";
 import { Transition } from "@headlessui/react";
 import Paper from '@mui/material/Paper';
@@ -18,6 +19,15 @@ export default function Content(prop) {
   }, [prop.isShowing]);
 
   const portFolio = [
+    {
+      title: "Professional Portfolio",
+      description:
+        "This website! I made this from scratch using React, Material UI, tailwind and headless ui.",
+      img: portfolio,
+      repoLink: "https://github.com/l1keafox/reactFolio",
+      deployLink: "https://l1keafox.github.io/reactFolio/",
+    },
+
     {
       title: "Bubble Dungeonz",
       description:

@@ -62,7 +62,7 @@ function App() {
   console.log(stage,displayContent);
 
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col h-screen justify-between dark:bg-gradient-to-r from-indigo-500 to-black">
       <Transition
         show={navBarShowing}
         enter="transform transition duration-[400ms]"
