@@ -7,6 +7,7 @@ import portfolio from "../components/assets/images/portfolio.PNG";
 import weather from "../components/assets/images/weather.png";
 import { Transition } from "@headlessui/react";
 import Paper from '@mui/material/Paper';
+import {AiFillCaretLeft,AiFillCaretRight} from 'react-icons/ai';
 
 const Portfolios = [
   {
@@ -79,15 +80,13 @@ export default function Content(prop) {
     currentI++;
     if(currentI >= Portfolios.length) currentI = 0;
     setPortfolioIndex(currentI);
-    console.log('next?',portfolioIndex)
   };  
 
   const previousPortfolio = (e) => {
     let currentI = portfolioIndex;
     currentI--;
-    if(currentI < 0) currentI = Portfolios.lnegth;
+    if(currentI < 0) currentI = Portfolios.length-1;
     setPortfolioIndex(currentI);
-    console.log('prev?',portfolioIndex)
   };
   
 
@@ -96,7 +95,7 @@ export default function Content(prop) {
   // style={{ width: "100%", height: "50px" }}
   // class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
   return (
-    <div className = "justify-between ">
+    <div className = "justify-around ">
       <Transition
         show={isShowing}
         enter="transition duration-1000 ease-in-out"
@@ -106,9 +105,9 @@ export default function Content(prop) {
         leaveFrom="transform translate-x-0  opacity-100"
         leaveTo="transform translate-y-full  opacity-0"
       >
-        <h1 className="text-center text-5xl font-mono dark:text-white"> My Projects </h1>
+        <h1 className="text-center text-5xl font-mono dark:text-white"> {Portfolios[portfolioIndex].title} </h1>
         <div className="flex py-8 gap-x-2 gap-y-1 text-center items-center justify-between font-mono ">
-          <button onClick={previousPortfolio }> Left </button>
+          <AiFillCaretLeft onClick={previousPortfolio } className= " text-8xl hover:cursor-pointer" />
           {
               <Paper
               className="max-w-sm w-3/4 lg:max-w-full lg:flex p-3 py-6 "
@@ -143,7 +142,7 @@ export default function Content(prop) {
               </div>
             </Paper>            
           }
-          <button onClick = {nextPortfolio}> right </button>
+          <AiFillCaretRight  onClick = {nextPortfolio} className= " text-8xl hover:cursor-pointer" />
         </div>
       </Transition>
     </div>
