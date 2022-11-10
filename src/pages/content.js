@@ -119,7 +119,7 @@ export default function Content(prop) {
                   className="even:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                   src={Portfolios[portfolioIndex].img}
                 />
-                <div className="bg-slate-50 dark:bg-slate-700 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div className="dark:bg-opacity-10 dark:bg-slate-700 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-center leading-normal">
                   <div className="mb-8 ">
                     <p className="text-gray-700 text-base dark:text-slate-50">
                       {Portfolios[portfolioIndex].description}

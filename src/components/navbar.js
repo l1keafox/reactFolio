@@ -9,7 +9,7 @@ export default function Navbar({navLink}) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                <a href="#" className="flex">
           
-                 <h1 className='font-serif text-2xl italic font-extrabold'><TypeIt> <span className="text-blue-700">Raymond </span>Lewis</TypeIt></h1>
+                 <h1 className='font-serif text-2xl italic font-extrabold'><TypeIt> <span className="text-blue-700 dark:text-blue-400">Raymond </span>Lewis</TypeIt></h1>
                </a>
       
             <button
