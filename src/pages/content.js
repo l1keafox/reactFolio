@@ -6,8 +6,8 @@ import team from "../components/assets/images/team.png";
 import portfolio from "../components/assets/images/portfolio.PNG";
 import weather from "../components/assets/images/weather.png";
 import { Transition } from "@headlessui/react";
-import Paper from '@mui/material/Paper';
-import {AiFillCaretLeft,AiFillCaretRight} from 'react-icons/ai';
+import Paper from "@mui/material/Paper";
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
 const Portfolios = [
   {
@@ -65,7 +65,7 @@ const Portfolios = [
 export default function Content(prop) {
   const [isShowing, setIsShowing] = useState(false);
   const [portfolioIndex, setPortfolioIndex] = useState(0);
-  
+
   useEffect(() => {
     // Update the document title using the browser API
     setIsShowing(true);
@@ -78,24 +78,23 @@ export default function Content(prop) {
   const nextPortfolio = (e) => {
     let currentI = portfolioIndex;
     currentI++;
-    if(currentI >= Portfolios.length) currentI = 0;
+    if (currentI >= Portfolios.length) currentI = 0;
     setPortfolioIndex(currentI);
-  };  
+  };
 
   const previousPortfolio = (e) => {
     let currentI = portfolioIndex;
     currentI--;
-    if(currentI < 0) currentI = Portfolios.length-1;
+    if (currentI < 0) currentI = Portfolios.length - 1;
     setPortfolioIndex(currentI);
   };
-  
 
   ///100px180
   //
   // style={{ width: "100%", height: "50px" }}
   // class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
   return (
-    <div className = "justify-around ">
+    <div>
       <Transition
         show={isShowing}
         enter="transition duration-1000 ease-in-out"
@@ -105,44 +104,55 @@ export default function Content(prop) {
         leaveFrom="transform translate-x-0  opacity-100"
         leaveTo="transform translate-y-full  opacity-0"
       >
-        <h1 className="text-center text-5xl font-mono dark:text-white"> {Portfolios[portfolioIndex].title} </h1>
-        <div className="flex py-8 gap-x-2 gap-y-1 text-center items-center justify-between font-mono ">
-          <AiFillCaretLeft onClick={previousPortfolio } className= " text-8xl hover:cursor-pointer" />
-          {
-              <Paper
-              className="max-w-sm w-3/4 lg:max-w-full lg:flex p-3 py-6 "
-            >
-              <img
-                className="even:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                src={Portfolios[portfolioIndex].img}
-              />
-              <div className="bg-slate-50 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-                <div className="mb-8">
-                  <div className="text-gray-900 font-bold text-3xl mb-2">
-                    {Portfolios[portfolioIndex].title}
+        <div className="justify-around ">
+          <h1 className="text-center text-5xl font-mono dark:text-white">
+            {Portfolios[portfolioIndex].title}
+          </h1>
+          <div className="flex py-8 gap-x-2 gap-y-1 text-center items-center justify-between font-mono h-3/5">
+            <AiFillCaretLeft
+              onClick={previousPortfolio}
+              className=" text-8xl hover:cursor-pointer"
+            />
+            {
+              <div className="max-w-sm w-3/4 lg:max-w-full lg:flex p-3 py-6 ">
+                <img
+                  className="even:rotate-1 h-48 lg:h-auto w-auto lg:w-1/2 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                  src={Portfolios[portfolioIndex].img}
+                />
+                <div className="bg-slate-50 dark:bg-slate-700 rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                  <div className="mb-8 ">
+                    <p className="text-gray-700 text-base dark:text-slate-50">
+                      {Portfolios[portfolioIndex].description}
+                    </p>
                   </div>
-                  <p className="text-gray-700 text-base">
-                    {Portfolios[portfolioIndex].description}
-                  </p>
-                </div>
-                <div className="flex items-center  justify-center">
-                  <div className="text-sm">
-                    <a href={Portfolios[portfolioIndex].repoLink} target="_blank">
-                      <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 m-2 rounded">
-                        Repo
-                      </button>
-                    </a>
-                    <a href={Portfolios[portfolioIndex].deployLink} target="_blank">
-                      <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded">
-                        DeployLink
-                      </button>
-                    </a>
+                  <div className="flex items-center  justify-center">
+                    <div className="text-sm">
+                      <a
+                        href={Portfolios[portfolioIndex].repoLink}
+                        target="_blank"
+                      >
+                        <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 m-2 rounded">
+                          Repo
+                        </button>
+                      </a>
+                      <a
+                        href={Portfolios[portfolioIndex].deployLink}
+                        target="_blank"
+                      >
+                        <button className="bg-blue-500 hover:bg-blue-700 text-gray-900 font-bold py-2 px-4 rounded">
+                          DeployLink
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </Paper>            
-          }
-          <AiFillCaretRight  onClick = {nextPortfolio} className= " text-8xl hover:cursor-pointer" />
+            }
+            <AiFillCaretRight
+              onClick={nextPortfolio}
+              className=" text-8xl hover:cursor-pointer"
+            />
+          </div>
         </div>
       </Transition>
     </div>
