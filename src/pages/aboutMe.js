@@ -21,7 +21,7 @@ export default function Content(prop) {
         leaveFrom="transform translate-x-0"
         leaveTo="transform translate-x-full"
       >
-        <h1 className="text-3xl font-bold text-center"> About Me </h1>
+        <h1 className="text-3xl font-bold text-center dark:text-slate-300"> About Me </h1>
 
         <div className="md:flex w-4/5 mx-auto">
           <img className="w-80 h-80" src={avatar} />

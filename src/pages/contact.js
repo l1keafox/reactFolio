@@ -62,7 +62,7 @@ export default function Contact(prop) {
         >
 
     <form ref={form} onSubmit={sendEmail} className="emailForm flex flex-col ">
-      <label htmlFor="nameInput" className="labelContact ">
+      <label htmlFor="nameInput" className="labelContact dark:text-slate-300">
         Name:
       </label>
       <input
@@ -74,11 +74,11 @@ export default function Contact(prop) {
         placeholder="Your name here!"
         onChange={handleName}
       />
-      <label htmlFor="reply_to" className="labelContact">
+      <label htmlFor="reply_to" className="labelContact dark:text-slate-300">
         Email:
       </label>
       <input
-      className = "bg-slate-50"
+      className = "bg-slate-50 "
         value={email}
         type="email"
         name="reply_to"
@@ -86,7 +86,7 @@ export default function Contact(prop) {
         placeholder="Your email here!"
         onChange={handleEmail}
       />
-      <label htmlFor="messageInput" className="labelContact">
+      <label htmlFor="messageInput" className="labelContact dark:text-slate-300">
         Message:
       </label>
       <textarea
