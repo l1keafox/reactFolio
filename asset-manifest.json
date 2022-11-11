@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactFolio/static/css/main.b3156860.css",
-    "main.js": "/reactFolio/static/js/main.46dde249.js",
+    "main.css": "/reactFolio/static/css/main.8022de5e.css",
+    "main.js": "/reactFolio/static/js/main.99f88b85.js",
     "static/js/787.2e31c416.chunk.js": "/reactFolio/static/js/787.2e31c416.chunk.js",
     "static/media/portfolio.PNG": "/reactFolio/static/media/portfolio.360c119a956e6f91c7dd.PNG",
     "static/media/projectOne.PNG": "/reactFolio/static/media/projectOne.bbe97ca89956e8e2062f.PNG",
@@ -13,12 +13,12 @@
     "static/media/bubble.png": "/reactFolio/static/media/bubble.4c9e19f0b8125f914757.png",
     "static/media/team.png": "/reactFolio/static/media/team.634d82d715071dd16f02.png",
     "index.html": "/reactFolio/index.html",
-    "main.b3156860.css.map": "/reactFolio/static/css/main.b3156860.css.map",
-    "main.46dde249.js.map": "/reactFolio/static/js/main.46dde249.js.map",
+    "main.8022de5e.css.map": "/reactFolio/static/css/main.8022de5e.css.map",
+    "main.99f88b85.js.map": "/reactFolio/static/js/main.99f88b85.js.map",
     "787.2e31c416.chunk.js.map": "/reactFolio/static/js/787.2e31c416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3156860.css",
-    "static/js/main.46dde249.js"
+    "static/css/main.8022de5e.css",
+    "static/js/main.99f88b85.js"
   ]
 }
