@@ -1,6 +1,8 @@
 import React, { useEffect,useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Transition } from '@headlessui/react';
+import { TextField } from "@mui/material";
+
 export default function Contact(prop) {
   const [isShowing, setIsShowing] = useState(false)
   useEffect(() => {
@@ -30,8 +32,8 @@ export default function Contact(prop) {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    console.log(e.target, "submit!", form.current);
-    if(form.current === '') {
+    console.log(e.target, "submit!", message);
+    if(message === '' || handleName === '' || name === '') {
       console.log('bad!');
       alert("Please fill out the form");
       return;
@@ -50,7 +52,7 @@ export default function Contact(prop) {
   };
 
   return (
-    <div className="justify-center items-center content-center p-32">
+    <div className="justify-center items-center content-center p-2 sm:p-32">
       <Transition
           show={isShowing}
           enter="transition duration-1000 ease-in-out"
@@ -65,7 +67,7 @@ export default function Contact(prop) {
       <label htmlFor="nameInput" className="labelContact dark:text-slate-300">
         Name:
       </label>
-      <input
+      <TextField
         className = "bg-slate-50"
         value={name}
         type="text"
@@ -74,10 +76,12 @@ export default function Contact(prop) {
         placeholder="Your name here!"
         onChange={handleName}
       />
+
+
       <label htmlFor="reply_to" className="labelContact dark:text-slate-300">
         Email:
       </label>
-      <input
+      <TextField
       className = "bg-slate-50 "
         value={email}
         type="email"
@@ -90,14 +94,14 @@ export default function Contact(prop) {
         Message:
       </label>
       <textarea
-      className = "bg-slate-50 h-40"
+      className = "bg-slate-50 h-40 p-2"
         value={message}
         name="message"
         id="messageInput"
         placeholder="What would you like to tell me?"
         onChange={handleMsg}
       />
-      <button className="contactBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"  type="submit" value="Send" >Send
+      <button className="contactBtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-2 rounded"  type="submit" value="Send" >Send
       </button>
     </form>
     </Transition>
